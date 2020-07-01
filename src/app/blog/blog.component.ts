@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ArticleMetadata } from '../../models/objects/article-metadata/article-metadata';
 
 // @ts-ignore
-import articles from 'src/assets/articles/articles.json';
+import articles from 'src/assets/articles.json';
 
 @Component({
   selector: 'app-blog',
@@ -16,7 +16,6 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.articles = articles.data;
-    console.log(this.articles);
   }
 
 }

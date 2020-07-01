@@ -17,6 +17,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MarkdownModule } from 'ngx-markdown';
+
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogCardComponent } from './blog/blog-card/blog-card.component';
@@ -31,10 +33,13 @@ import { ArticleComponent } from './article/article.component';
     ArticleComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+
+    BrowserModule,
     BrowserAnimationsModule,
+
     FlexLayoutModule,
+
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
@@ -43,8 +48,10 @@ import { ArticleComponent } from './article/article.component';
     MatMenuModule,
     MatTableModule,
     MatInputModule,
-    HttpClientModule,
     MatCardModule,
+
+    HttpClientModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
