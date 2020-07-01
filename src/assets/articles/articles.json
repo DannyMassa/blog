@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "title": "Guide to Quartz Scheduling",
+      "publishedDate": "30-06-2020",
+      "description": "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting. The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting. The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain,",
+      "technologies": ["angular"],
+      "source": "guide-to-quartz-scheduling.md",
+      "url": "guide-to-quartz-scheduling"
+    },
+    {
+      "title": "Guide to Quartz Scheduling 2",
+      "publishedDate": "30-06-2020",
+      "description": "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting. The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting. The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain,",
+      "technologies": ["java"],
+      "source": "guide-to-quartz-scheduling.md",
+      "url": "guide-to-quartz-scheduling-2"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<mat-card class="card">
+  <mat-card-title>
+    <mat-card-title>{{ articleData.title }}</mat-card-title>
+  </mat-card-title>
+  <mat-card-header>
+      {{ articleData.publishedDate }}
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{ articleData.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-toolbar-row>
+      <button routerLink="/blog/{{ articleData.url }}" mat-button>Read More</button>
+      <span class="spacer"></span>
+      <div *ngFor="let technology of articleData.technologies">
+        <button mat-icon-button class="mdc-icon-button">
+          <mat-icon aria-hidden="false" aria-label="icon" svgIcon="{{ technology }}"></mat-icon>
+        </button>
+      </div>
+    </mat-toolbar-row>
+  </mat-card-footer>
+</mat-card>
