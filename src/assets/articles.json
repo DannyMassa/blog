@@ -2,17 +2,17 @@
   "data": [
     {
       "title": "Getting Started with Quartz Scheduling In Spring Boot",
-      "publishedDate": "30-06-2020",
+      "publishedDate": "06-30-2020",
       "description": "First time Quartz set up to be used in future tutorials",
       "technologies": ["java"],
-      "url": "getting-started-with-quartz-scheduling"
+      "urlTitle": "getting-started-with-quartz-scheduling"
     },
     {
       "title": "Dynamic Task Scheduling Using Quartz In Spring Boot",
-      "publishedDate": "30-06-2020",
+      "publishedDate": "08-02-2020",
       "description": "Quartz, but when tasks are prompted by user behavior",
       "technologies": ["java"],
-      "url": "dynamic-task-scheduling-using-quartz-in-spring-boot"
+      "urlTitle": "dynamic-task-scheduling-using-quartz-in-spring-boot"
     }
   ]
 }

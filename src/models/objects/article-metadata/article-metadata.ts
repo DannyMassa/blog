@@ -3,5 +3,5 @@ export class ArticleMetadata {
   publishedDate: string;
   description: string;
   technologies: string[];
-  url: string;
+  urlTitle: string;
 }

@@ -23,6 +23,8 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogCardComponent } from './blog/blog-card/blog-card.component';
 import { ArticleComponent } from './article/article.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FilterPipe } from '../pipes/filter/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { ArticleComponent } from './article/article.component';
     BlogComponent,
     BlogCardComponent,
     ArticleComponent,
+    FilterPipe,
   ],
   imports: [
     AppRoutingModule,
@@ -51,7 +54,9 @@ import { ArticleComponent } from './article/article.component';
     MatCardModule,
 
     HttpClientModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

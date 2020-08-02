@@ -1,3 +1,3 @@
-<div class="mat-background-primary" *ngFor="let article of articles">
+<div class="mat-background-primary" *ngFor="let article of articles | filter: search" >
   <app-blog-card [articleData]="article"></app-blog-card>
 </div>
