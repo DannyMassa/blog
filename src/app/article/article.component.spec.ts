@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ArticleComponent } from './article.component';
+import {MarkdownModule} from 'ngx-markdown';
+import {RouterTestingModule} from '@angular/router/testing';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 describe('ArticleComponent', () => {
   let component: ArticleComponent;
@@ -8,7 +11,14 @@ describe('ArticleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArticleComponent ]
+      imports: [
+        HttpClientModule,
+        RouterTestingModule.withRoutes([]),
+        MarkdownModule.forRoot({ loader: HttpClient })
+      ],
+      declarations: [
+        ArticleComponent
+      ]
     })
     .compileComponents();
   }));

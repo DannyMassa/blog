@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
     this.iconService.registerIcons();
   }
 
-  updateSearch() {
+  updateSearch(): void {
     this.searchService.subject.next(this.search);
   }
 }
