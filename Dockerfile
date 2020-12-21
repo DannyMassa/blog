@@ -1,6 +1,6 @@
 FROM node:alpine AS build
-WORKDIR .
-COPY package.json yarn.lock ./
+WORKDIR ./blog/
+COPY package.json yarn.lock ./blog/
 RUN yarn install
 COPY . .
 EXPOSE 4200
