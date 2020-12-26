@@ -17,5 +17,4 @@ export class ArticleComponent implements OnInit {
     this.route.params.subscribe( params => this.url = params.url );
     this.source = 'assets/articles/' +  this.url  + '.md';
   }
-
 }
