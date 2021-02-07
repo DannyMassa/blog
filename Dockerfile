@@ -7,7 +7,6 @@ WORKDIR /ng-app
 COPY . .
 RUN $(npm bin)/ng lint
 
-
 FROM node:alpine as test
 COPY package.json package-lock.json ./
 
