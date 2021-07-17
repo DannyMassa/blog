@@ -1,7 +1,7 @@
-name: Pull Request Publish Image
+name: Publish Image
 
 on:
-  pull_request:
+  push:
     branches: [ master ]
 
 jobs:
@@ -35,7 +35,6 @@ jobs:
           push: true
           tags: |
             ${{ secrets.IMAGE_REGISTRY }}/${{ secrets.IMAGE_ORG }}/${{ secrets.IMAGE_REPO }}:latest
-            ${{ secrets.IMAGE_REGISTRY }}/${{ secrets.IMAGE_ORG }}/${{ secrets.IMAGE_REPO }}:${{ steps.sha.outputs.sha7 }}
           build-args: |
             REVISION=${{ github.sha }}
             SHORT_SHA=${{ steps.sha.outputs.sha7 }}
