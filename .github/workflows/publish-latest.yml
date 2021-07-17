@@ -2,6 +2,7 @@ name: Publish Image
 
 on:
   push:
+    branches: [ master ]
 
 jobs:
   build_and_push_to_registry:
@@ -33,7 +34,7 @@ jobs:
         with:
           push: true
           tags: |
-            ${{ secrets.IMAGE_REGISTRY }}/${{ secrets.IMAGE_ORG }}/${{ secrets.IMAGE_REPO }}:${{ steps.sha.outputs.sha7 }}
+            ${{ secrets.IMAGE_REGISTRY }}/${{ secrets.IMAGE_ORG }}/${{ secrets.IMAGE_REPO }}:latest
           build-args: |
             REVISION=${{ github.sha }}
             SHORT_SHA=${{ steps.sha.outputs.sha7 }}
