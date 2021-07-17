@@ -7,18 +7,6 @@
       <input type="search" matInput placeholder="Search..." [(ngModel)]="search" (ngModelChange)="updateSearch()">
     </mat-form-field>
     <span class="spacer"></span>
-    <button mat-icon-button (click)="goToBuyMeACoffeeUrl()" class="mdc-icon-button">
-      <mat-icon aria-hidden="false" aria-label="Buy Me a Coffee icon" svgIcon="buymeacoffee"></mat-icon>
-    </button>
-    <button mat-icon-button (click)="goToGitHubUrl()" class="mdc-icon-button">
-      <mat-icon aria-hidden="false" aria-label="Github icon" svgIcon="github"></mat-icon>
-    </button>
-    <button mat-icon-button (click)="goToLinkedInUrl()" class="mdc-icon-button">
-      <mat-icon aria-hidden="false" aria-label="LinkedIn icon" svgIcon="linkedin"></mat-icon>
-    </button>
-    <button mat-icon-button (click)="goToDevUrl()" class="mdc-icon-button">
-      <mat-icon aria-hidden="false" aria-label="Dev icon" svgIcon="dev"></mat-icon>
-    </button>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
