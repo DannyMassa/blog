@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
 
   search: string;
 
+  
   constructor(private iconService: IconService, private searchService: SearchService) { }
 
   goToBuyMeACoffeeUrl(): void {
